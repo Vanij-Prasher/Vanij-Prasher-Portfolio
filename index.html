@@ -12,22 +12,114 @@
     />
 
     <style>
+       
       * {
         margin: 0;
         padding: 0;
       }
       body {
-        background-color: rgba(1, 1, 33, 0.909);
+        background-color: rgba(0, 0, 33);
         color: white;
+        font-family: "poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 23px;
+        list-style: none;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: rgb(76, 76, 169);
+        font-size: 1.09rem;
+      }
+      main hr{
+        border: 0;
+        background-color: rgb(170, 107, 228) ;
+        height: 1px;
+        margin: 60px 75px;
+      }
+      .left {
+        font-size: 1.7rem;
+      }
+      .Firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 125px 0;
+      }
+      .Firstsection > div {
+        width: 40%;
+      }
+      .LeftSection {
+        font-size: 3rem;
+      }
+      .RightSection img {
+        width: 80%;
+      }
+      .Purple {
+        color: rgb(170, 107, 228);
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .Secondsection{
+        max-width: 80vw;
+        margin: auto;
       }
     </style>
   </head>
   <body>
     <header>
       <nav>
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left"><span>VANIJ PRASHER - PORTFOLIO</span></div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
+    <main>
+      <section class="Firstsection">
+        <div class="LeftSection">
+          Hello, My name is <span class="Purple">Vanij Prasher</span>
+          <div>I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="RightSection"><img src="img.png" alt="" /></div>
+      </section>
+      <hr>
+      <section class="Secondsection">
+        <h1>Past Experience </h1>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer.",
+          "Python Developer.",
+          "Machine Learning Engineer.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
