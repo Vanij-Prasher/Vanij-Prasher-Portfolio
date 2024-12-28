@@ -12,77 +12,162 @@
     />
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgba(0, 0, 33);
-        color: white;
-        font-family: "poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 90px;
-        background-color: rgb(18, 18, 62);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        margin: 0 23px;
-        list-style: none;
-      }
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-      }
-      nav ul li a:hover {
-        color: rgb(76, 76, 169);
-        font-size: 1.09rem;
-      }
-      main hr {
-        border: 0;
-        background-color: rgb(170, 107, 228);
-        height: 1px;
-        margin: 60px 75px;
-      }
-      .left {
-        font-size: 1.7rem;
-      }
-      .Firstsection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 125px 0;
-      }
-      .Firstsection > div {
-        width: 40%;
-      }
-      .LeftSection {
-        font-size: 3rem;
-      }
-      .RightSection img {
-        width: 80%;
-      }
-      .Purple {
-        color: rgb(170, 107, 228);
-      }
-      #element {
-        color: rgb(170, 107, 228);
-      }
-      .Secondsection {
-        max-width: 80vw;
-        margin: auto;
-      }
-      .Secondsection h1 {
-        font-size: 1.9rem;
-      }
+            * {
+              margin: 0;
+              padding: 0;
+            }
+
+            body {
+              background-color: rgba(0, 0, 33);
+              color: white;
+              font-family: "poppins", sans-serif;
+            }
+
+            nav {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              height: 90px;
+              background-color: rgb(18, 18, 62);
+            }
+
+            nav ul {
+              display: flex;
+              justify-content: center;
+            }
+
+            nav ul li {
+              margin: 0 23px;
+              list-style: none;
+            }
+
+            nav ul li a {
+              color: white;
+              text-decoration: none;
+            }
+
+            nav ul li a:hover {
+              color: rgb(76, 76, 169);
+              font-size: 1.09rem;
+            }
+
+            main hr {
+              border: 0;
+              background-color: rgb(170, 107, 228);
+              height: 1px;
+              margin: 60px 75px;
+            }
+
+            .left {
+              font-size: 1.7rem;
+            }
+
+            .Firstsection {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin: 125px 0;
+            }
+
+            .Firstsection > div {
+              width: 40%;
+            }
+
+            .LeftSection {
+              font-size: 3rem;
+            }
+            .LeftSection .buttons {
+              padding: 50px 0;
+            }
+            .LeftSection .btn{
+              background-color: #1e2167;;
+              color: white;
+              border: 2px solid white;
+              border-radius: 6px;
+              font-size: 20px;
+              cursor: pointer;
+
+            }
+
+            .RightSection img {
+              width: 80%;
+            }
+
+            .Purple {
+              color: rgb(170, 107, 228);
+            }
+
+            .text-gray {
+              color: grey;
+            }
+
+            #element {
+              color: rgb(170, 107, 228);
+            }
+
+            .Secondsection {
+              max-width: 80vw;
+              margin: auto;
+              height: 52vw;
+            }
+
+            .Secondsection h1 {
+              font-size: 1.9rem;
+            }
+            .Secondsection .line {
+              background: whitesmoke;
+              width: 75vw;
+              height: 3px;
+              margin: 3px;
+              display: flex;
+            }
+            .Secondsection .vertical {
+              background: white;
+              height: 93px;
+              width: 3px;
+              margin: 0 287px;
+            }
+
+            .devimg {
+              width: 62px;
+              position: relative;
+              top: -60px;
+              left: -25px;
+            }
+            .vertical-title {
+              position: relative;
+              top: 40px;
+              width: 220px;
+            }
+            .vertical-desc {
+              position: relative;
+              top: 60px;
+              width: 230px;
+              color: grey;
+              font-size: 12px;
+            }
+            footer {
+              background-color: #0e0e1a;
+            }
+            .footer {
+              display: flex;
+              padding: 23px 112px;
+              justify-content: space-between;
+            }
+            .footer ul{
+              list-style: none;
+            }
+            .footer > div {
+              width: 300px;
+            }
+            footer .footer-rights{
+              text-align: center;
+              color: grey;
+              padding: 12px 0;
+            }
     </style>
   </head>
+
   <body>
     <header>
       <nav>
@@ -104,14 +189,62 @@
           Hello, My name is <span class="Purple">Vanij Prasher</span>
           <div>I am a passionate</div>
           <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit LinkedIn</button>
+            <button class="btn">Visit GitHub</button>
+          </div>
         </div>
         <div class="RightSection"><img src="img.png" alt="" /></div>
       </section>
       <hr />
       <section class="Secondsection">
+        <span class="text-gray">What i have done so far !!!</span>
         <h1>Work Experience</h1>
+
+        <div class="line">
+          <div class="vertical">
+            <img class="devimg" src="dev1.png" alt="" />
+            <div class="vertical-title">
+              Data Analyst intern at Paytm-(Date).
+            </div>
+            <div class="vertical-desc">
+              I used Python to deal with data . I also applied Machine Learning
+              algorithms to Solve complex problems .
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="devimg" src="dev2.png" alt="" />
+            <div class="vertical-title">
+              Software Developer intern at Mentorgain-(Date).
+            </div>
+            <div class="vertical-desc">
+              Here i worked at live project. I used React to interact with the
+              UI and make changes in it .
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="Footer-first">
+          <h3>Vanij's Developer Portfolio Website</h3>
+        </div>
+        <div class="Footer- second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Comtact me</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; vanijsportfolio.com|All rights reserved
+      </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
